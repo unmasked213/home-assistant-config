@@ -1,0 +1,228 @@
+{
+  "title": "SILAM Pollen Monitor",
+  "entity": {
+    "sensor": {
+      "index": {
+        "name": "Index",
+        "state": {
+          "very_low": "Very Low",
+          "low": "Low",
+          "moderate": "Moderate",
+          "high": "High",
+          "very_high": "Very High",
+          "unknown": "Unknown"
+        },
+        "state_attributes": {
+          "responsible_elevated": {
+            "name": "Primary allergen",
+            "state": {
+              "missing": "No data",
+              "alder": "Alder",
+              "birch": "Birch",
+              "grass": "Grass",
+              "olive": "Olive",
+              "mugwort": "Mugwort",
+              "ragweed": "Ragweed",
+              "hazel": "Hazel",
+              "unknown": "Unknown"
+            }
+          },
+          "date": {
+            "name": "Forecast Date & Time"
+          },
+          "index_tomorrow": {
+            "name": "Forecast for Tomorrow",
+            "state": {
+              "very_low": "Very Low",
+              "low": "Low",
+              "moderate": "Moderate",
+              "high": "High",
+              "very_high": "Very High",
+              "unknown": "Unknown"
+            }
+          }
+        }
+      },
+      "alder": {
+        "name": "Alder",
+        "unit_of_measurement": "grains/m³",
+        "state_attributes": {
+          "altitude": {
+            "name": "Altitude (sea level)"
+          },
+          "tomorrow": {
+            "name": "Forecast for Tomorrow"
+          }
+        }
+      },
+      "birch": {
+        "name": "Birch",
+        "unit_of_measurement": "grains/m³",
+        "state_attributes": {
+          "altitude": {
+            "name": "Altitude (sea level)"
+          },
+          "tomorrow": {
+            "name": "Forecast for Tomorrow"
+          }
+        }
+      },
+      "grass": {
+        "name": "Grass",
+        "unit_of_measurement": "grains/m³",
+        "state_attributes": {
+          "altitude": {
+            "name": "Altitude (sea level)"
+          },
+          "tomorrow": {
+            "name": "Forecast for Tomorrow"
+          }
+        }
+      },
+      "hazel": {
+        "name": "Hazel",
+        "unit_of_measurement": "grains/m³",
+        "state_attributes": {
+          "altitude": {
+            "name": "Altitude (sea level)"
+          },
+          "tomorrow": {
+            "name": "Forecast for Tomorrow"
+          }
+        }
+      },
+      "mugwort": {
+        "name": "Mugwort",
+        "unit_of_measurement": "grains/m³",
+        "state_attributes": {
+          "altitude": {
+            "name": "Altitude (sea level)"
+          },
+          "tomorrow": {
+            "name": "Forecast for Tomorrow"
+          }
+        }
+      },
+      "olive": {
+        "name": "Olive",
+        "unit_of_measurement": "grains/m³",
+        "state_attributes": {
+          "altitude": {
+            "name": "Altitude (sea level)"
+          },
+          "tomorrow": {
+            "name": "Forecast for Tomorrow"
+          }
+        }
+      },
+      "ragweed": {
+        "name": "Ragweed",
+        "unit_of_measurement": "grains/m³",
+        "state_attributes": {
+          "altitude": {
+            "name": "Altitude (sea level)"
+          },
+          "tomorrow": {
+            "name": "Forecast for Tomorrow"
+          }
+        }
+      }
+    },
+    "weather": {
+      "index_polen_weather": {
+        "name": "Forecast",
+        "state": {
+          "very_low": "Very Low",
+          "low": "Low",
+          "moderate": "Moderate",
+          "high": "High",
+          "very_high": "Very High",
+          "unknown": "Unknown"
+        },
+        "state_attributes": {
+          "responsible_elevated": {
+            "name": "Primary allergen",
+            "state": {
+              "missing": "No data",
+              "alder": "Alder",
+              "birch": "Birch",
+              "grass": "Grass",
+              "olive": "Olive",
+              "mugwort": "Mugwort",
+              "ragweed": "Ragweed",
+              "hazel": "Hazel",
+              "unknown": "Unknown"
+            }
+          }
+        }
+      }
+    }
+  },
+  "config": {
+    "step": {
+      "user": {
+        "data": {
+          "zone_id": "Observation zone",
+          "var": "Pollen type",
+          "update_interval": "Update Interval (minutes, minimum 30)",
+          "forecast": "**BETA** Enable pollen forecast?"
+        },
+        "data_description": {
+          "forecast": "The forecast feature may increase API response time up to 10x."
+        },
+        "title": "Create SILAM Pollen Service",
+        "description": "Configure the parameters listed below.\nForecasts are for scientific use; accuracy is not guaranteed."
+      },
+      "manual_coords": {
+        "data": {
+          "zone_name": "Zone Name",
+          "location": "Location",
+          "altitude": "Altitude above sea level"
+        },
+        "title": "Create SILAM Pollen Service",
+        "description": "Enter the zone name and adjust the coordinates if necessary.\n[Check out the service coverage map](https://danishru.github.io/silam_pollen/)."
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "update_interval": "Update Interval (minutes, minimum 30)",
+          "var": "Pollen type",
+          "version": "Dataset",
+          "forecast": "**BETA** Enable pollen forecast?"
+        },
+        "data_description": {
+          "forecast": "The forecast feature may increase API response time up to 10x."
+        },
+        "title": "SILAM Pollen Options"
+      }
+    }
+  },
+  "selector": {
+    "config_pollen": {
+      "options": {
+        "alder_m22": "Alder",
+        "birch_m22": "Birch",
+        "grass_m32": "Grass",
+        "hazel_m23": "Hazel",
+        "mugwort_m18": "Mugwort",
+        "olive_m28": "Olive",
+        "ragweed_m18": "Ragweed"
+      }
+    }
+  },
+  "services": {
+    "manual_update": {
+      "name": "Manual Update",
+      "description": "Manually trigger a data refresh for the selected SILAM Pollen integration targets.",
+      "fields": {
+        "targets": {
+          "name": "Targets",
+          "description": "Select one or more devices or entities to update."
+        }
+      }
+    }
+  }
+}

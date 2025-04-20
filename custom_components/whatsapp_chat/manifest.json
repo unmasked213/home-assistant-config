@@ -1,0 +1,11 @@
+﻿{
+    "domain": "whatsapp_chat",
+    "name": "WhatsApp Chat History",
+    "documentation": "https://github.com/yourusername/ha-whatsapp-chat",
+    "dependencies": [],
+    "codeowners": [],
+    "requirements": [],
+    "version": "1.0.0",
+    "iot_class": "local_polling",
+    "integration_type": "device"
+}

@@ -1,0 +1,11 @@
+{
+    "domain": "chatreader",
+    "name": "Chat Reader",
+    "documentation": "https://github.com/yourusername/ha-chatreader",
+    "dependencies": [],
+    "codeowners": [],
+    "requirements": [],
+    "version": "1.0.0",
+    "iot_class": "local_polling",
+    "integration_type": "device"
+} 

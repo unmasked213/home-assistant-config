@@ -1,0 +1,24 @@
+Test data
+09:21 - Me: trying again
+09:30 - Me: test
+09:35 - Ben: think I finally got my temp sensors mostly calibrated to within a degree of actual temp against a thermocouple now
+09:36 - Ben: now I just need to figure out htf to make my battery powered ones work
+09:36 - Ben: they should last for months on some batteries but some tests I did had the batteries scrapping out after a little more than a day lol
+09:39 - Ben: might need to look into some proper lithium battery solutions and charging circuits
+11:03 - Me: I can only see your last message, still working on the rest of the chat history lol so idk what you mean
+12:08 - Ben: lol
+15:15 - Me: test
+15:22 - Me: test
+16:26 - Me: trying again... sorry for spam
+17:43 - Ben: l np
+17:13 - Me: test
+17:13 - Me: omg
+17:13 - Me: it works
+17:14 - Ben: 😮
+17:18 - Me: test
+17:21 - Me: .
+17:21 - Me: test 123
+17:25 - Ben: hmmm?
+19:38 - Me: test
+19:03 - Me: dude send me a test message here plz
+19:03 - Ben: test

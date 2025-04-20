@@ -1,0 +1,228 @@
+{
+  "title": "SILAM Pollenmonitor",
+  "entity": {
+    "sensor": {
+      "index": {
+        "name": "Indeks",
+        "state": {
+          "very_low": "Svært lav",
+          "low": "Lav",
+          "moderate": "Moderat",
+          "high": "Høy",
+          "very_high": "Svært høy",
+          "unknown": "Ukjent"
+        },
+        "state_attributes": {
+          "responsible_elevated": {
+            "name": "Hovedallergen",
+            "state": {
+              "missing": "Ingen data",
+              "alder": "Al",
+              "birch": "Bjørk",
+              "grass": "Gress",
+              "olive": "Oliven",
+              "mugwort": "Malurt",
+              "ragweed": "Ambrosia",
+              "hazel": "Hassel",
+              "unknown": "Ukjent"
+            }
+          },
+          "date": {
+            "name": "Prognosedato og tid"
+          },
+          "index_tomorrow": {
+            "name": "Prognose for i morgen",
+            "state": {
+              "very_low": "Svært lav",
+              "low": "Lav",
+              "moderate": "Moderat",
+              "high": "Høy",
+              "very_high": "Svært høy",
+              "unknown": "Ukjent"
+            }
+          }
+        }
+      },
+      "alder": {
+        "name": "Al",
+        "unit_of_measurement": "korn/m³",
+        "state_attributes": {
+          "altitude": {
+            "name": "Høyde (sjønivå)"
+          },
+          "tomorrow": {
+            "name": "Prognose for i morgen"
+          }
+        }
+      },
+      "birch": {
+        "name": "Bjørk",
+        "unit_of_measurement": "korn/m³",
+        "state_attributes": {
+          "altitude": {
+            "name": "Høyde (sjønivå)"
+          },
+          "tomorrow": {
+            "name": "Prognose for i morgen"
+          }
+        }
+      },
+      "grass": {
+        "name": "Gress",
+        "unit_of_measurement": "korn/m³",
+        "state_attributes": {
+          "altitude": {
+            "name": "Høyde (sjønivå)"
+          },
+          "tomorrow": {
+            "name": "Prognose for i morgen"
+          }
+        }
+      },
+      "hazel": {
+        "name": "Hassel",
+        "unit_of_measurement": "korn/m³",
+        "state_attributes": {
+          "altitude": {
+            "name": "Høyde (sjønivå)"
+          },
+          "tomorrow": {
+            "name": "Prognose for i morgen"
+          }
+        }
+      },
+      "mugwort": {
+        "name": "Malurt",
+        "unit_of_measurement": "korn/m³",
+        "state_attributes": {
+          "altitude": {
+            "name": "Høyde (sjønivå)"
+          },
+          "tomorrow": {
+            "name": "Prognose for i morgen"
+          }
+        }
+      },
+      "olive": {
+        "name": "Oliven",
+        "unit_of_measurement": "korn/m³",
+        "state_attributes": {
+          "altitude": {
+            "name": "Høyde (sjønivå)"
+          },
+          "tomorrow": {
+            "name": "Prognose for i morgen"
+          }
+        }
+      },
+      "ragweed": {
+        "name": "Ambrosia",
+        "unit_of_measurement": "korn/m³",
+        "state_attributes": {
+          "altitude": {
+            "name": "Høyde (sjønivå)"
+          },
+          "tomorrow": {
+            "name": "Prognose for i morgen"
+          }
+        }
+      }
+    },
+    "weather": {
+      "index_polen_weather": {
+        "name": "Pollenprognose **BETA**",
+        "state": {
+          "very_low": "Svært lav",
+          "low": "Lav",
+          "moderate": "Moderat",
+          "high": "Høy",
+          "very_high": "Svært høy",
+          "unknown": "Ukjent"
+        },
+        "state_attributes": {
+          "responsible_elevated": {
+            "name": "Hovedallergen",
+            "state": {
+              "missing": "Ingen data",
+              "alder": "Al",
+              "birch": "Bjørk",
+              "grass": "Gress",
+              "olive": "Oliven",
+              "mugwort": "Malurt",
+              "ragweed": "Ambrosia",
+              "hazel": "Hassel",
+              "unknown": "Ukjent"
+            }
+          }
+        }
+      }
+    }
+  },
+  "config": {
+    "step": {
+      "user": {
+        "data": {
+          "zone_id": "Observasjonssone",
+          "var": "Pollentype",
+          "update_interval": "Oppdateringsintervall (minutter, minst 30)",
+          "forecast": "**BETA** Aktiver pollenprognose?"
+        },
+        "data_description": {
+          "forecast": "Prognosefunksjonen kan øke API-svarstiden opptil 10 ganger."
+        },
+        "title": "Opprett SILAM Pollen-tjeneste",
+        "description": "Konfigurer parametrene nedenfor.\nPrognoser er for vitenskapelig bruk; nøyaktighet garanteres ikke."
+      },
+      "manual_coords": {
+        "data": {
+          "zone_name": "Sonenavn",
+          "location": "Plassering",
+          "altitude": "Høyde over havet"
+        },
+        "title": "Opprett SILAM Pollen-tjeneste",
+        "description": "Angi sonenavnet og juster koordinatene om nødvendig.\n[Sjekk tjenestekartet](https://danishru.github.io/silam_pollen/)."
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "update_interval": "Oppdateringsintervall (minutter, minst 30)",
+          "var": "Pollentype",
+          "version": "Datasett",
+          "forecast": "**BETA** Aktiver pollenprognose?"
+        },
+        "data_description": {
+          "forecast": "Prognosefunksjonen kan øke API-svarstiden opptil 10 ganger."
+        },
+        "title": "SILAM Pollen-alternativer"
+      }
+    }
+  },
+  "selector": {
+    "config_pollen": {
+      "options": {
+        "alder_m22": "Al",
+        "birch_m22": "Bjørk",
+        "grass_m32": "Gress",
+        "hazel_m23": "Hassel",
+        "mugwort_m18": "Malurt",
+        "olive_m28": "Oliven",
+        "ragweed_m18": "Ambrosia"
+      }
+    }
+  },
+  "services": {
+    "manual_update": {
+      "name": "Manuell oppdatering",
+      "description": "Manuell igangsetting av datoppdatering for de valgte målene for SILAM Pollen-integrasjonen.",
+      "fields": {
+        "targets": {
+          "name": "Mål",
+          "description": "Velg ett eller flere enheter eller entiteter for oppdatering."
+        }
+      }
+    }
+  }
+}

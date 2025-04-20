@@ -1,0 +1,84 @@
+2024/01/17 - 02:53:16		auto	GETACK	Appliance.System.All	{"system": {"hardware": {"type": "mss310", "subType": "un", "version": "6.0.0", "chipType": "rtl8710cf", "uuid": "###############################0", "macAddress": "################0"}, "firmware": {"version": "6.3.22", "compileTime": "2023/10/13-13:45:18", "encrypt": 1, "wifiMac": "################0", "innerIp": "############1", "server": "###################0", "port": "@0", "userId": "@0"}, "time": {"timestamp": 1705459846, "timezone": "Europe/London", "timeRule": [[1679792400, 3600, 1], [1698541200, 0, 0], [1711846800, 3600, 1], [1729990800, 0, 0], [1743296400, 3600, 1], [1761440400, 0, 0], [1774746000, 3600, 1], [1792890000, 0, 0], [1806195600, 3600, 1], [1824944400, 0, 0], [1837645200, 3600, 1], [1856394000, 0, 0], [1869094800, 3600, 1], [1887843600, 0, 0], [1901149200, 3600, 1], [1919293200, 0, 0], [1932598800, 3600, 1], [1950742800, 0, 0], [1964048400, 3600, 1], [1982797200, 0, 0]]}, "online": {"status": 1, "bindId": "4L0F2O0qK1N0FzOg", "who": 1}}, "digest": {"togglex": [{"channel": 0, "onoff": 1, "lmTime": 1703216499}]}}
+2024/01/17 - 02:53:16		auto	GETACK	Appliance.System.Ability	{"Appliance.Config.Key": {}, "Appliance.Config.WifiList": {}, "Appliance.Config.Wifi": {}, "Appliance.Config.WifiX": {}, "Appliance.Config.Trace": {}, "Appliance.Config.Info": {}, "Appliance.Config.OverTemp": {}, "Appliance.System.All": {}, "Appliance.System.Hardware": {}, "Appliance.System.Firmware": {}, "Appliance.System.Debug": {}, "Appliance.System.Online": {}, "Appliance.System.Time": {}, "Appliance.System.Clock": {}, "Appliance.System.Ability": {}, "Appliance.System.Runtime": {}, "Appliance.System.Report": {}, "Appliance.System.Position": {}, "Appliance.System.DNDMode": {}, "Appliance.Control.Multiple": {"maxCmdNum": 3}, "Appliance.Control.Bind": {}, "Appliance.Control.Unbind": {}, "Appliance.Control.Upgrade": {}, "Appliance.Control.OverTemp": {}, "Appliance.Control.ConsumptionX": {}, "Appliance.Control.ConsumptionH": {}, "Appliance.Control.Electricity": {}, "Appliance.Control.ConsumptionConfig": {}, "Appliance.Control.ToggleX": {}, "Appliance.Control.TimerX": {"sunOffsetSupport": 1}, "Appliance.Control.TriggerX": {}, "Appliance.Digest.TriggerX": {}, "Appliance.Digest.TimerX": {}}
+2024/01/17 - 02:53:16	TX	http	GET	Appliance.Config.Info	{"info": {}}
+2024/01/17 - 02:53:16		auto	LOG	DEBUG	ClientConnectorError(Cannot connect to host 192.168.1.125:80 ssl:default [Connect call failed ('192.168.1.125', 80)]) in async_http_request GET Appliance.Config.Info attempt(0)
+2024/01/17 - 02:53:16	TX	http	GET	Appliance.Config.Info	{"info": {}}
+2024/01/17 - 02:53:16		auto	LOG	DEBUG	ClientConnectorError(Cannot connect to host 192.168.1.125:80 ssl:default [Connect call failed ('192.168.1.125', 80)]) in async_http_request GET Appliance.Config.Info attempt(1)
+2024/01/17 - 02:53:16	TX	http	GET	Appliance.Config.Info	{"info": {}}
+2024/01/17 - 02:53:17		auto	LOG	DEBUG	ClientConnectorError(Cannot connect to host 192.168.1.125:80 ssl:default [Connect call failed ('192.168.1.125', 80)]) in async_http_request GET Appliance.Config.Info attempt(2)
+2024/01/17 - 02:53:18	TX	http	GET	Appliance.Config.OverTemp	{"overTemp": {}}
+2024/01/17 - 02:53:19		auto	LOG	DEBUG	ClientConnectorError(Cannot connect to host 192.168.1.125:80 ssl:default [Connect call failed ('192.168.1.125', 80)]) in async_http_request GET Appliance.Config.OverTemp attempt(0)
+2024/01/17 - 02:53:19	TX	http	GET	Appliance.Config.OverTemp	{"overTemp": {}}
+2024/01/17 - 02:53:19		auto	LOG	DEBUG	ClientConnectorError(Cannot connect to host 192.168.1.125:80 ssl:default [Connect call failed ('192.168.1.125', 80)]) in async_http_request GET Appliance.Config.OverTemp attempt(1)
+2024/01/17 - 02:53:19	TX	http	GET	Appliance.Config.OverTemp	{"overTemp": {}}
+2024/01/17 - 02:53:19		auto	LOG	DEBUG	ClientConnectorError(Cannot connect to host 192.168.1.125:80 ssl:default [Connect call failed ('192.168.1.125', 80)]) in async_http_request GET Appliance.Config.OverTemp attempt(2)
+2024/01/17 - 02:53:20	TX	http	GET	Appliance.System.Runtime	{"runtime": {}}
+2024/01/17 - 02:53:20		auto	LOG	DEBUG	ClientConnectorError(Cannot connect to host 192.168.1.125:80 ssl:default [Connect call failed ('192.168.1.125', 80)]) in async_http_request GET Appliance.System.Runtime attempt(0)
+2024/01/17 - 02:53:20	TX	http	GET	Appliance.System.Runtime	{"runtime": {}}
+2024/01/17 - 02:53:20		auto	LOG	DEBUG	ClientConnectorError(Cannot connect to host 192.168.1.125:80 ssl:default [Connect call failed ('192.168.1.125', 80)]) in async_http_request GET Appliance.System.Runtime attempt(1)
+2024/01/17 - 02:53:20	TX	http	GET	Appliance.System.Runtime	{"runtime": {}}
+2024/01/17 - 02:53:20		auto	LOG	DEBUG	ClientConnectorError(Cannot connect to host 192.168.1.125:80 ssl:default [Connect call failed ('192.168.1.125', 80)]) in async_http_request GET Appliance.System.Runtime attempt(2)
+2024/01/17 - 02:53:22	TX	http	GET	Appliance.Control.OverTemp	{"overTemp": {}}
+2024/01/17 - 02:53:22		auto	LOG	DEBUG	ClientConnectorError(Cannot connect to host 192.168.1.125:80 ssl:default [Connect call failed ('192.168.1.125', 80)]) in async_http_request GET Appliance.Control.OverTemp attempt(0)
+2024/01/17 - 02:53:22	TX	http	GET	Appliance.Control.OverTemp	{"overTemp": {}}
+2024/01/17 - 02:53:22		auto	LOG	DEBUG	ClientConnectorError(Cannot connect to host 192.168.1.125:80 ssl:default [Connect call failed ('192.168.1.125', 80)]) in async_http_request GET Appliance.Control.OverTemp attempt(1)
+2024/01/17 - 02:53:22	TX	http	GET	Appliance.Control.OverTemp	{"overTemp": {}}
+2024/01/17 - 02:53:22		auto	LOG	DEBUG	ClientConnectorError(Cannot connect to host 192.168.1.125:80 ssl:default [Connect call failed ('192.168.1.125', 80)]) in async_http_request GET Appliance.Control.OverTemp attempt(2)
+2024/01/17 - 02:53:24	TX	http	GET	Appliance.Control.ConsumptionX	{"consumptionx": []}
+2024/01/17 - 02:53:24		auto	LOG	DEBUG	ClientConnectorError(Cannot connect to host 192.168.1.125:80 ssl:default [Connect call failed ('192.168.1.125', 80)]) in async_http_request GET Appliance.Control.ConsumptionX attempt(0)
+2024/01/17 - 02:53:25	TX	http	GET	Appliance.Control.ConsumptionX	{"consumptionx": []}
+2024/01/17 - 02:53:25		auto	LOG	DEBUG	ClientConnectorError(Cannot connect to host 192.168.1.125:80 ssl:default [Connect call failed ('192.168.1.125', 80)]) in async_http_request GET Appliance.Control.ConsumptionX attempt(1)
+2024/01/17 - 02:53:25	TX	http	GET	Appliance.Control.ConsumptionX	{"consumptionx": []}
+2024/01/17 - 02:53:25		auto	LOG	DEBUG	ClientConnectorError(Cannot connect to host 192.168.1.125:80 ssl:default [Connect call failed ('192.168.1.125', 80)]) in async_http_request GET Appliance.Control.ConsumptionX attempt(2)
+2024/01/17 - 02:53:26	TX	http	GET	Appliance.Control.ConsumptionH	{"consumptionH": {}}
+2024/01/17 - 02:53:26		auto	LOG	DEBUG	ClientConnectorError(Cannot connect to host 192.168.1.125:80 ssl:default [Connect call failed ('192.168.1.125', 80)]) in async_http_request GET Appliance.Control.ConsumptionH attempt(0)
+2024/01/17 - 02:53:26	TX	http	GET	Appliance.Control.ConsumptionH	{"consumptionH": {}}
+2024/01/17 - 02:53:26		auto	LOG	DEBUG	ClientConnectorError(Cannot connect to host 192.168.1.125:80 ssl:default [Connect call failed ('192.168.1.125', 80)]) in async_http_request GET Appliance.Control.ConsumptionH attempt(1)
+2024/01/17 - 02:53:26	TX	http	GET	Appliance.Control.ConsumptionH	{"consumptionH": {}}
+2024/01/17 - 02:53:26		auto	LOG	DEBUG	ClientConnectorError(Cannot connect to host 192.168.1.125:80 ssl:default [Connect call failed ('192.168.1.125', 80)]) in async_http_request GET Appliance.Control.ConsumptionH attempt(2)
+2024/01/17 - 02:53:28	TX	http	GET	Appliance.Control.Electricity	{"electricity": {}}
+2024/01/17 - 02:53:28		auto	LOG	DEBUG	ClientConnectorError(Cannot connect to host 192.168.1.125:80 ssl:default [Connect call failed ('192.168.1.125', 80)]) in async_http_request GET Appliance.Control.Electricity attempt(0)
+2024/01/17 - 02:53:29	TX	http	GET	Appliance.Control.Electricity	{"electricity": {}}
+2024/01/17 - 02:53:29		auto	LOG	DEBUG	ClientConnectorError(Cannot connect to host 192.168.1.125:80 ssl:default [Connect call failed ('192.168.1.125', 80)]) in async_http_request GET Appliance.Control.Electricity attempt(1)
+2024/01/17 - 02:53:29	TX	http	GET	Appliance.Control.Electricity	{"electricity": {}}
+2024/01/17 - 02:53:29		auto	LOG	DEBUG	ClientConnectorError(Cannot connect to host 192.168.1.125:80 ssl:default [Connect call failed ('192.168.1.125', 80)]) in async_http_request GET Appliance.Control.Electricity attempt(2)
+2024/01/17 - 02:53:30	TX	http	GET	Appliance.Control.ConsumptionConfig	{"consumptionConfig": {}}
+2024/01/17 - 02:53:31		auto	LOG	DEBUG	ClientConnectorError(Cannot connect to host 192.168.1.125:80 ssl:default [Connect call failed ('192.168.1.125', 80)]) in async_http_request GET Appliance.Control.ConsumptionConfig attempt(0)
+2024/01/17 - 02:53:31	TX	http	GET	Appliance.Control.ConsumptionConfig	{"consumptionConfig": {}}
+2024/01/17 - 02:53:31		auto	LOG	DEBUG	ClientConnectorError(Cannot connect to host 192.168.1.125:80 ssl:default [Connect call failed ('192.168.1.125', 80)]) in async_http_request GET Appliance.Control.ConsumptionConfig attempt(1)
+2024/01/17 - 02:53:31	TX	http	GET	Appliance.Control.ConsumptionConfig	{"consumptionConfig": {}}
+2024/01/17 - 02:53:31		auto	LOG	DEBUG	ClientConnectorError(Cannot connect to host 192.168.1.125:80 ssl:default [Connect call failed ('192.168.1.125', 80)]) in async_http_request GET Appliance.Control.ConsumptionConfig attempt(2)
+2024/01/17 - 02:53:32	TX	http	GET	Appliance.Control.ToggleX	{"togglex": []}
+2024/01/17 - 02:53:32		auto	LOG	DEBUG	ClientConnectorError(Cannot connect to host 192.168.1.125:80 ssl:default [Connect call failed ('192.168.1.125', 80)]) in async_http_request GET Appliance.Control.ToggleX attempt(0)
+2024/01/17 - 02:53:32	TX	http	GET	Appliance.Control.ToggleX	{"togglex": []}
+2024/01/17 - 02:53:32		auto	LOG	DEBUG	ClientConnectorError(Cannot connect to host 192.168.1.125:80 ssl:default [Connect call failed ('192.168.1.125', 80)]) in async_http_request GET Appliance.Control.ToggleX attempt(1)
+2024/01/17 - 02:53:32	TX	http	GET	Appliance.Control.ToggleX	{"togglex": []}
+2024/01/17 - 02:53:33		auto	LOG	DEBUG	ClientConnectorError(Cannot connect to host 192.168.1.125:80 ssl:default [Connect call failed ('192.168.1.125', 80)]) in async_http_request GET Appliance.Control.ToggleX attempt(2)
+2024/01/17 - 02:53:38	TX	http	GET	Appliance.Control.ConsumptionX	{"consumptionx": []}
+2024/01/17 - 02:53:39		auto	LOG	DEBUG	ClientConnectorError(Cannot connect to host 192.168.1.125:80 ssl:default [Connect call failed ('192.168.1.125', 80)]) in async_http_request GET Appliance.Control.ConsumptionX attempt(0)
+2024/01/17 - 02:53:39	TX	http	GET	Appliance.Control.Electricity	{"electricity": {}}
+2024/01/17 - 02:53:39		auto	LOG	DEBUG	ClientConnectorError(Cannot connect to host 192.168.1.125:80 ssl:default [Connect call failed ('192.168.1.125', 80)]) in async_http_request GET Appliance.Control.Electricity attempt(0)
+2024/01/17 - 02:53:39		auto	LOG	DEBUG	polling end
+2024/01/17 - 02:54:09		auto	LOG	DEBUG	polling start
+2024/01/17 - 02:54:09		auto	LOG	DEBUG	going offline!
+2024/01/17 - 02:54:09		auto	LOG	DEBUG	polling end
+2024/01/17 - 02:54:39		auto	LOG	DEBUG	polling start
+2024/01/17 - 02:54:39	TX	http	GET	Appliance.System.All	{"all": {}}
+2024/01/17 - 02:54:39		auto	LOG	DEBUG	ClientConnectorError(Cannot connect to host 192.168.1.125:80 ssl:default [Connect call failed ('192.168.1.125', 80)]) in async_http_request GET Appliance.System.All attempt(0)
+2024/01/17 - 02:54:39		auto	LOG	DEBUG	polling end
+2024/01/17 - 02:55:39		auto	LOG	DEBUG	polling start
+2024/01/17 - 02:55:39	TX	http	GET	Appliance.System.All	{"all": {}}
+2024/01/17 - 02:55:39		auto	LOG	DEBUG	ClientConnectorError(Cannot connect to host 192.168.1.125:80 ssl:default [Connect call failed ('192.168.1.125', 80)]) in async_http_request GET Appliance.System.All attempt(0)
+2024/01/17 - 02:55:39		auto	LOG	DEBUG	polling end
+2024/01/17 - 02:57:09		auto	LOG	DEBUG	polling start
+2024/01/17 - 02:57:09	TX	http	GET	Appliance.System.All	{"all": {}}
+2024/01/17 - 02:57:09		auto	LOG	DEBUG	ClientConnectorError(Cannot connect to host 192.168.1.125:80 ssl:default [Connect call failed ('192.168.1.125', 80)]) in async_http_request GET Appliance.System.All attempt(0)
+2024/01/17 - 02:57:09		auto	LOG	DEBUG	polling end
+2024/01/17 - 02:59:09		auto	LOG	DEBUG	polling start
+2024/01/17 - 02:59:09	TX	http	GET	Appliance.System.All	{"all": {}}
+2024/01/17 - 02:59:10		auto	LOG	DEBUG	ClientConnectorError(Cannot connect to host 192.168.1.125:80 ssl:default [Connect call failed ('192.168.1.125', 80)]) in async_http_request GET Appliance.System.All attempt(0)
+2024/01/17 - 02:59:10		auto	LOG	DEBUG	polling end
+2024/01/17 - 03:01:40		auto	LOG	DEBUG	polling start
+2024/01/17 - 03:01:40	TX	http	GET	Appliance.System.All	{"all": {}}
+2024/01/17 - 03:01:40		auto	LOG	DEBUG	ClientConnectorError(Cannot connect to host 192.168.1.125:80 ssl:default [Connect call failed ('192.168.1.125', 80)]) in async_http_request GET Appliance.System.All attempt(0)
+2024/01/17 - 03:01:40		auto	LOG	DEBUG	polling end

@@ -1,0 +1,20 @@
+
+# | START: generate_images.yaml
+# |  PATH: /config/packages/ai/generate_images.yaml
+
+
+# ╭────────────────────╮
+# │ TEMPLATE SENSOR    │
+# ╰────────────────────╯
+template: 
+  - sensor:
+
+# ➔ AI Generated Image URL
+#   Template sensor for the AI generated image URL
+      - name: "AI Generated Image URL"
+        unique_id: ai_generated_image_url
+        state: >
+          {{ states('input_text.ai_generated_image_url_part_1') }}{{ states('input_text.ai_generated_image_url_part_2') }}
+
+
+# |   END: generate_images.yaml

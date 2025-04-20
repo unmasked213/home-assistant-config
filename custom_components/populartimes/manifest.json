@@ -1,0 +1,9 @@
+{
+    "domain": "populartimes",
+    "name": "Popular Times",
+    "documentation": "",
+    "dependencies": [],
+    "codeowners": ["@freakshock88"],
+    "requirements": ["LivePopularTimes==1.3"],
+    "version": 0.27
+  }

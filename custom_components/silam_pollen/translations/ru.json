@@ -1,0 +1,228 @@
+{
+  "entity": {
+    "sensor": {
+      "index": {
+        "name": "Индекс пыльцы",
+        "state": {
+          "very_low": "Очень низкий",
+          "low": "Низкий",
+          "moderate": "Средний",
+          "high": "Высокий",
+          "very_high": "Очень высокий",
+          "unknown": "Неизвестно"
+        },
+        "state_attributes": {
+          "responsible_elevated": {
+            "name": "Основной аллерген",
+            "state": {
+              "missing": "Нет данных",
+              "alder": "Ольха",
+              "birch": "Берёза",
+              "grass": "Трава",
+              "olive": "Олива",
+              "mugwort": "Полынь",
+              "ragweed": "Амброзия",
+              "hazel": "Лещина",
+              "unknown": "Неизвестно"
+            }
+          },
+          "date": {
+            "name": "Дата/время прогноза"
+          },
+          "index_tomorrow": {
+            "name": "Прогноз на завтра",
+            "state": {
+              "very_low": "Очень низкий",
+              "low": "Низкий",
+              "moderate": "Средний",
+              "high": "Высокий",
+              "very_high": "Очень высокий",
+              "unknown": "Неизвестно"
+            }
+          }
+        }
+      },
+      "alder": {
+        "name": "Ольха",
+        "unit_of_measurement": "зерна/м³",
+        "state_attributes": {
+          "altitude": {
+            "name": "Высота (уровень моря)"
+            },
+          "tomorrow": {
+            "name": "Прогноз на завтра"
+            }
+         }
+      },
+      "birch": {
+        "name": "Берёза",
+        "unit_of_measurement": "зерна/м³",
+        "state_attributes": {
+          "altitude": {
+            "name": "Высота (уровень моря)"
+            },
+          "tomorrow": {
+            "name": "Прогноз на завтра"
+            }
+         }
+      },
+      "grass": {
+        "name": "Трава",
+        "unit_of_measurement": "зерна/м³",
+        "state_attributes": {
+          "altitude": {
+            "name": "Высота (уровень моря)"
+            },
+          "tomorrow": {
+            "name": "Прогноз на завтра"
+            }
+         }
+      },
+      "hazel": {
+        "name": "Лещина",
+        "unit_of_measurement": "зерна/м³",
+        "state_attributes": {
+          "altitude": {
+            "name": "Высота (уровень моря)"
+            },
+          "tomorrow": {
+            "name": "Прогноз на завтра"
+            }
+         }
+      },
+      "mugwort": {
+        "name": "Полынь",
+        "unit_of_measurement": "зерна/м³",
+        "state_attributes": {
+          "altitude": {
+            "name": "Высота (уровень моря)"
+            },
+          "tomorrow": {
+            "name": "Прогноз на завтра"
+            }
+         }
+      },
+      "olive": {
+        "name": "Олива",
+        "unit_of_measurement": "зерна/м³",
+        "state_attributes": {
+          "altitude": {
+            "name": "Высота (уровень моря)"
+            },
+          "tomorrow": {
+            "name": "Прогноз на завтра"
+            }
+         }
+      },
+      "ragweed": {
+        "name": "Амброзия",
+        "unit_of_measurement": "зерна/м³",
+        "state_attributes": {
+          "altitude": {
+            "name": "Высота (уровень моря)"
+            },
+          "tomorrow": {
+            "name": "Прогноз на завтра"
+            }
+         }
+      }
+    },
+    "weather": {
+      "index_polen_weather": {
+        "name": "Прогноз пыльцы **BETA**",
+        "state": {
+          "very_low": "Очень низкий",
+          "low": "Низкий",
+          "moderate": "Средний",
+          "high": "Высокий",
+          "very_high": "Очень высокий",
+          "unknown": "Неизвестно"
+        },
+        "state_attributes": {
+          "responsible_elevated": {
+            "name": "Основной аллерген",
+            "state": {
+              "missing": "Нет данных",
+              "alder": "Ольха",
+              "birch": "Берёза",
+              "grass": "Трава",
+              "olive": "Олива",
+              "mugwort": "Полынь",
+              "ragweed": "Амброзия",
+              "hazel": "Лещина",
+              "unknown": "Неизвестно"
+            }
+          }
+        }
+      }
+    }
+  },
+  "config": {
+    "step": {
+      "user": {
+        "data": {
+          "zone_id": "Зона наблюдения",
+          "altitude": "Высота над уровнем моря",
+          "var": "Тип пыльцы",
+          "update_interval": "Интервал обновления (в минутах, минимум 30)",
+          "forecast": "**BETA** Включить прогноз пыльцы?"
+        },
+        "data_description": {
+          "forecast": "Функция прогноза может увеличить время ответа API до 10 раз."
+        },
+        "title": "Создание службы SILAM Pollen",
+        "description": "Настройте параметры, указные ниже.\nПрогнозы для научного использования, точность не гарантируется."
+      },
+      "manual_coords": {
+        "data": {
+          "zone_name": "Название зоны",
+          "location": "Местоположение",
+          "altitude": "Высота над уровнем моря"
+        },
+        "title": "Создание службы SILAM Pollen",
+        "description": "Введите название зоны и при необходимости отрегулируйте координаты.\n[Ознакомьтесь с картой покрытия службы](https://danishru.github.io/silam_pollen/)."
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "update_interval": "Интервал обновления (в минутах, минимум 30)",
+          "var": "Тип пыльцы",
+          "version": "Набор данных",
+          "forecast": "**BETA** Включить прогноз пыльцы?"
+        },
+        "data_description": {
+          "forecast": "Функция прогноза может увеличить время ответа API до 10 раз."
+        },
+        "title": "Настройки SILAM Pollen"
+      }
+    }
+  },
+    "selector": {
+      "config_pollen": {
+        "options": {
+          "alder_m22": "Ольха",
+          "birch_m22": "Берёза",
+          "grass_m32": "Трава",
+          "hazel_m23": "Лещина",
+          "mugwort_m18": "Полынь",
+          "olive_m28": "Олива",
+          "ragweed_m18": "Амброзия"
+        }
+      }
+    },
+  "services": {
+    "manual_update": {
+      "name": "Ручное обновление",
+      "description": "Ручной запуск обновления данных для выбранных целей интеграции SILAM Pollen.",
+      "fields": {
+        "targets": {
+          "name": "Цели",
+          "description": "Выберите одно или несколько устройств или сущностей для обновления."
+        }
+      }
+    }
+  }
+}
